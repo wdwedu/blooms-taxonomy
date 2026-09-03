@@ -1,6 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Bloom's Taxonomy Interactive | Examine the Past</title>
+<style>
 
+html, body {
+  margin: 0;
+  padding: 0;
+  background: #050505;
+}
+body {
+  min-width: 320px;
+}
+#etp-blooms-app {
+  --yellow: #ffff00;
+  --green: #89ff42;
+  --red: #c63a2f;
+  --orange: #d25a25;
+  --gold: #e4a121;
+  --olive: #81963b;
+  --teal: #337f73;
+  --blue: #4789ae;
+  width: 100%;
+  min-height: 100vh;
+  overflow-x: hidden;
+  background: #050505;
+  color: #fff;
+  font-family: Georgia, "Times New Roman", serif;
+  line-height: 1.45;
+}
 
-  #etp-blooms-app * { box-sizing:border-box; }
+#etp-blooms-app * { box-sizing:border-box; }
   #etp-blooms-app a { color:inherit; }
   #etp-blooms-app .impact {
     font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
@@ -457,10 +489,10 @@
     color:var(--yellow); font-size:clamp(30px,4vw,46px);
     line-height:1; text-shadow:0 0 10px rgba(255,255,0,.06);
   }
-
 </style>
-
-
+</head>
+<body>
+<div id="etp-blooms-app">
 <nav class="icon-bar" aria-label="Bloom's Taxonomy page tools">
   <a class="icon-nav-link" href="#blooms-hero" data-tip="Interactive Pyramid" aria-label="Interactive Pyramid">
     <svg viewBox="0 0 24 24"><path d="M12 3 3 21h18L12 3Z"/><path d="M6.8 13h10.4M5 17h14"/></svg>
@@ -713,6 +745,7 @@
     <p class="sources">Product descriptions summarized from the Examine the Past Etsy listings. Product availability, pricing, and promotions may change on Etsy.</p>
   </div>
 </section>
+</div>
 <script>
 (function(){
   const root = document.getElementById('etp-blooms-app');
@@ -954,3 +987,5 @@
 })();
 </script>
 </div>
+</body>
+</html>
